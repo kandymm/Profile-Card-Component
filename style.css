@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+body{
+    background:url(./images/bg-pattern-top.svg);
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    width: 400px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+      
+}
+.backimg{
+    background: url(./images/bg-pattern-card.svg);
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+section img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+
+}
+.profile{
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-top: 70px;
+}
+.profile small{
+    padding-left: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: hsl(185, 75%, 39%);   
+}
+.profile h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(185, 75%, 39%);
+    margin: 10px 0 50px 0;
+}
+hr{
+    
+    width: 100%;
+}
+.media{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    grid-template-rows: auto;
+    place-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+span{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+  
+}
+span p{
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(228, 12%, 44%);
+}
+
+@media ( max-width: 768px){
+    .main{
+        width: 300px;
+        height: 320px;
+    }
+    .backimg{
+        height: 150px;
+    }
+    section img{
+        width: 80px;
+        height: 80px;
+        top: 43.8%;
+    }
+    .profile{
+        height: 250px;
+    }
+    .profile h2{
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+    .profile small{
+        font-size: 1rem;
+    }
+    .profile h4{
+        font-size: 0.8rem;
+        margin: 10px 0 30px 0;
+    }
+    .media{
+        height: 80px;
+    }
+    span{
+        font-size: 1rem;
+    }
+    span p{
+        font-size: 10px;
+    }
+}
+    
